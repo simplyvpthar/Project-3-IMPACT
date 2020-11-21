@@ -1,0 +1,27 @@
+{
+  "name": "project-3-impact",
+  "version": "1.0.0",
+  "description": "## Table of Contents * [Introduction](#introduction)  * [How it Works](#how-it-works) * [Requirements](#requirements) * [Installation](#installation) * [Contributors](#contributors) * [Demo Images](#demo-images) * [Contact](#contact) * [Links](#links)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "tailwindcss build src/styles.css -o public/styles.css",
+    "download-part1": "npm i animate.css autoprefixer postcss tailwindcss"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/simplyvpthar/Project-3-IMPACT.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/simplyvpthar/Project-3-IMPACT/issues"
+  },
+  "homepage": "https://github.com/simplyvpthar/Project-3-IMPACT#readme",
+  "dependencies": {
+    "animate.css": "^4.1.1",
+    "autoprefixer": "^10.0.2",
+    "postcss": "^8.1.8",
+    "tailwindcss": "^2.0.1"
+  }
+}
