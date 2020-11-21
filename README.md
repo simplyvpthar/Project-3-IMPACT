@@ -1,9 +1,3 @@
-IMPACT APP
-1.      We are building an application that connects employees of the company to charities that company partners with option to also choose their own charity to donate money and time to. The app also offers peer-to-peer assistance (medical assistance, disaster help). This will help the company improve upon employee engagement and employee retention.
-2.      Project roles
- Project manager: Vanh Tharavong
- Front End: Adrian Banda, Paul Jackson, Ridge Khan
- Back End: Marcus Ramirez, Serge Noumbet, Ridge Khan, Vanh Tharavong
 # IMPACT
 
 ## Table of Contents
@@ -17,7 +11,7 @@ IMPACT APP
 * [Links](#links)
 
 ## Introduction
-Quick introduction of Application
+We are building an application that connects employees of the company to charities that company partners with option to also choose their own charity to donate money and time to. The app also offers peer-to-peer assistance (medical assistance, disaster help). This will help the company improve upon employee engagement and employee retention.
 
 ## How it Works
 Brief explanation of how it works
@@ -29,12 +23,19 @@ Whats required to run the application
 Whats need to be installed to run application
 
 ## Contributors
-[Serge Noumbet](https://github.com/)  
-[Adrian Banda](https://github.com/banda-adrian)   
-[Marcus Ramirez](https://github.com/marcuspramirez)  
-[Vanh Tharavong](https://github.com/simplyvpthar)  
+ Project manager:  
+ [Vanh Tharavong](https://github.com/simplyvpthar)  
+
+Front End:  
+[Adrian Banda](https://github.com/banda-adrian)  
 [Paul Jackson](https://github.com/)  
-[Ridge Khan](https://github.com/Rkhan93) 
+[Ridge Khan](https://github.com/Rkhan93)   
+
+ Back End:   
+[Marcus Ramirez](https://github.com/marcuspramirez)  
+[Vanh Tharavong](https://github.com/simplyvpthar)   
+[Ridge Khan](https://github.com/Rkhan93)   
+[Serge Noumbet](https://github.com/sergebryan)  
 
 ## Demo Images
 
