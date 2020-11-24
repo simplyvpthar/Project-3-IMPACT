@@ -1,33 +1,23 @@
-use employees;
+use ImpactDb;
 
-INSERT INTO department
-    (name)
+INSERT INTO scholarship
+    (student_name, student_school, student_gpa)
 VALUES
-    ('Sales'),
-    ('Engineering'),
-    ('Finance'),
-    ('Legal');
+    ('Joe Smith', 'SMU', 3.50 ),
+    ('Mark Porter', 'UTD', 3.60 ),
+    ('Andrea Cook', 'UCLA', 3.40 ),
+    ('Alexis Smooth', 'VCU', 3.80 );
 
-INSERT INTO role
-    (title, salary, department_id)
+INSERT INTO Charity
+    (charity_name, charity_amount, employee_id)
 VALUES
-    ('Sales Lead', 100000, 1),
-    ('Salesperson', 80000, 1),
-    ('Lead Engineer', 150000, 2),
-    ('Software Engineer', 120000, 2),
-    ('Account Manager', 160000, 3),
-    ('Accountant', 125000, 3),
-    ('Legal Team Lead', 250000, 4),
-    ('Lawyer', 190000, 4);
+    ('American Heart Association', 100, 0001),
+    ('American Cancer Society', 75, 0002),
+    
 
-INSERT INTO employee
-    (first_name, last_name, role_id, manager_id)
+INSERT INTO peerFunding
+    (first_name, last_name, amount_donated, employee_id)
 VALUES
-    ('John', 'Doe', 1, NULL),
-    ('Mike', 'Chan', 2, 1),
-    ('Ashley', 'Rodriguez', 3, NULL),
-    ('Kevin', 'Tupik', 4, 3),
-    ('Kunal', 'Singh', 5, NULL),
-    ('Malia', 'Brown', 6, 5),
-    ('Sarah', 'Lourd', 7, NULL),
-    ('Tom', 'Allen', 8, 7);
+    ('John', 'Doe', 70, 0005),
+    ('Mike', 'Chan', 95, 0004)
+    
