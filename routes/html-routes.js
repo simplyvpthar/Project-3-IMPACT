@@ -14,16 +14,26 @@ module.exports = function(app) {
 
   // index route loads view.html
   app.get("/", function(req, res) {
-    res.sendFile(path.join(__dirname, "../public/blog.html"));
+    res.sendFile(path.join(__dirname, "../public/homePage.html"));
   });
 
-  app.get("/cms", function(req, res) {
-    res.sendFile(path.join(__dirname, "../public/cms.html"));
+  app.get("/login", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/login.html"));
   });
 
-  // blog route loads blog.html
-  app.get("/blog", function(req, res) {
-    res.sendFile(path.join(__dirname, "../public/blog.html"));
+  app.get("/charity", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/charity.html"));
   });
 
+  app.get("/dashboard", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/dashboardTemplate.html"));
+  });
+
+  app.get("/scholarship", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/scholarApp.html"));
+  });
+
+  app.get("/sign-up", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/signUp.html"));
+  });
 };
