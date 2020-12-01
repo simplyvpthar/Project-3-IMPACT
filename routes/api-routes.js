@@ -34,7 +34,7 @@ module.exports = function(app) {
 
   // Get route for retrieving a single post
   app.get("/api/posts/:id", function(req, res) {
-    db.Post.findOne({
+    db.Charity.findOne({
       where: {
         id: req.params.id
       }
@@ -47,7 +47,7 @@ module.exports = function(app) {
   // POST route for saving a new post
   app.post("/api/posts", function(req, res) {
     console.log(req.body);
-    db.Post.create({
+    db.Charity.create({
       title: req.body.title,
       body: req.body.body,
       category: req.body.category
@@ -59,7 +59,7 @@ module.exports = function(app) {
 
   // DELETE route for deleting posts
   app.delete("/api/posts/:id", function(req, res) {
-    db.Post.destroy({
+    db.Charity.destroy({
       where: {
         id: req.params.id
       }
@@ -71,7 +71,7 @@ module.exports = function(app) {
 
   // PUT route for updating posts
   app.put("/api/posts", function(req, res) {
-    db.Post.update(req.body,
+    db.Charity.update(req.body,
       {
         where: {
           id: req.body.id
