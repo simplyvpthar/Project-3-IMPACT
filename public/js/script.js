@@ -8,12 +8,12 @@ $(document).ready(function () {
     }).then(function (response) {
         for (let i = 0; i < response.length; i++) {
             charities.push(response[i].charityName);
+            $('.box').append('<option value=' + charities[i].replace(' ', '_') + ' name=' + charities[i].replace(' ', '_') + '>' + charities[i] + '</option>');
 
         }
         console.log(charities);
 
-        var textarea = document.getElementById("box");
-        textarea.value = charities.join("\n");
+
 
         $("#submitBtn").click(function (event) {
             event.preventDefault();
@@ -32,4 +32,6 @@ $(document).ready(function () {
 
         });
     });
+
+
 });
