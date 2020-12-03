@@ -22,13 +22,13 @@ module.exports = function(app) {
 
   // Get route for returning posts of a specific category
   app.get("/api/posts/category/:category", function(req, res) {
-    db.Post.findAll({
+    db.Charity.findAll({
       where: {
-        category: req.params.category
+        charityname: req.params.charityname
       }
     })
-      .then(function(dbPost) {
-        res.json(dbPost);
+      .then(function(dbCharity) {
+        res.json(dbCharity);
       });
   });
 
@@ -39,8 +39,8 @@ module.exports = function(app) {
         id: req.params.id
       }
     })
-      .then(function(dbPost) {
-        res.json(dbPost);
+      .then(function(dbCharity) {
+        res.json(dbCharity);
       });
   });
 
@@ -48,12 +48,12 @@ module.exports = function(app) {
   app.post("/api/posts", function(req, res) {
     console.log(req.body);
     db.Charity.create({
-      title: req.body.title,
-      body: req.body.body,
-      category: req.body.category
+      user: req.body.user,
+      charityname: req.body.charityname,
+      amount: req.body.amount
     })
-      .then(function(dbPost) {
-        res.json(dbPost);
+      .then(function(dbCharity) {
+        res.json(dbCharity);
       });
   });
 
@@ -64,8 +64,8 @@ module.exports = function(app) {
         id: req.params.id
       }
     })
-      .then(function(dbPost) {
-        res.json(dbPost);
+      .then(function(dbCharity) {
+        res.json(dbCharity);
       });
   });
 
@@ -77,8 +77,8 @@ module.exports = function(app) {
           id: req.body.id
         }
       })
-      .then(function(dbPost) {
-        res.json(dbPost);
+      .then(function(dbCharity) {
+        res.json(dbCharity);
       });
   });
 };
