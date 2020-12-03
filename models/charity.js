@@ -1,23 +1,21 @@
 module.exports = function(sequelize, DataTypes) {
   var Charity = sequelize.define("Charity", {
-    user: {
+    firstName: {
       type: DataTypes.STRING,
       allowNull: false,
-      validate: {
-        len: [1]
-      }
     },
-    charityname: {
-      type: DataTypes.TEXT,
-      allowNull: false,
-      validate: {
-        len: [1]
-      }
-    },
-    category: {
+    lastName: {
       type: DataTypes.STRING,
-      defaultValue: "Personal"
-    }
+      allowNull: false,
+    },
+    charityName: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    amount: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+    },
     
   });
   return Charity;
