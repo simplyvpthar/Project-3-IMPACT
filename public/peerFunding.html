@@ -27,13 +27,13 @@
           <!-- Dashboard/Charity/Scholarships/Peer Funding buttons -->
           <div class="hidden sm:block sm:ml-6">
             <div class="flex space-x-4">
-              <a href="/dashboard"
+              <a href="homePage.html"
                 class="px-3 py-2 rounded-md text-sm font-medium text-white hover:text-yellow-500 hover:bg-gray-900">Dashboard</a>
-              <a href="/charity"
+              <a href="charity.html"
                 class="px-3 py-2 rounded-md text-sm font-medium text-white hover:text-yellow-500 hover:bg-gray-900">Charity</a>
-              <a href="/scholarship"
-                class="px-3 py-2 rounded-md text-sm font-medium text-white hover:text-yellow-500 hover:bg-gray-900">Scholarships</a>
-              <a href="/pureFunding"
+              <a href="tuitionReinbursement.html"
+                class="px-3 py-2 rounded-md text-sm font-medium text-white hover:text-yellow-500 hover:bg-gray-900">Tuition Reinbursement</a>
+              <a href="peerFunding.html"
                 class="px-3 py-2 rounded-md text-sm font-medium text-white hover:text-yellow-500 hover:bg-gray-900">Peer
                 Funding</a>
             </div>
@@ -59,13 +59,13 @@
       <!-- Mobile Dashboard/Charity/Scholarships/Peer funding buttons -->
       <div class=" sm:hidden">
         <div class="px-2 pt-2 pb-3 space-y-1">
-          <a href="#"
+          <a href="homePage.html"
             class="block px-3 py-2 rounded-md text-base font-medium text-white hover:text-yellow-500 hover:bg-gray-900">Dashboard</a>
-          <a href="#"
+          <a href="charity.html"
             class="block px-3 py-2 rounded-md text-base font-medium text-white hover:text-yellow-500 hover:bg-gray-900">Charity</a>
-          <a href="#"
-            class="block px-3 py-2 rounded-md text-base font-medium text-white hover:text-yellow-500 hover:bg-gray-900">Scholarships</a>
-          <a href="#"
+          <a href="tuitionReinbursement.html"
+            class="block px-3 py-2 rounded-md text-base font-medium text-white hover:text-yellow-500 hover:bg-gray-900">Tuition Reinbursement</a>
+          <a href="peerFunding.html"
             class="block px-3 py-2 rounded-md text-base font-medium text-white hover:text-yellow-500 hover:bg-gray-900">Peer
             Funding</a>
         </div>
@@ -104,6 +104,9 @@ body {
     color: #333;
     background: #fafafa;
     font-family: "Patua One", sans-serif;
+}
+#donation-margin{
+  padding: 1.5rem;
 }
 .contact-form {
     padding: 50px;
@@ -148,72 +151,66 @@ body {
 </style>
 </head>
 <body>
+
+  
 <div class="container-lg">
     <div class="row">
         <div class="col-md-10 mx-auto">
             <div class="contact-form">
-                <h1>Largesse Peer-to-Peer Donations!</h1>
-                <p class="hint-text">Donate here to help a co-worker in need !</p>       
-                <form action="/examples/actions/confirmation.php" method="post">
-                    <div class="row">
-                        <div class="col-sm-4">
-                            <div class="form-group">
-                                <label for="inputName">First Name</label>
-                                <input type="text" class="form-control" id="inputName" required>
-                            </div>
-                        </div>                
-                        <div class="col-sm-4">
-                            <div class="form-group">
-                                <label for="inputName">Last Name</label>
-                                <input type="email" class="form-control" id="inputEmail" required>
-                            </div>
-                        </div>
+                <h1>Largesse Peer-to-Peer Donations</h1>
+                <p class="hint-text">Donate here to help co-workers in need!</p>       
+                <form>
+                  <div class="row">
+                    <div class="col">
+                      <input type="text" class="form-control" placeholder="First Name">
                     </div>
-                </div>            
-                    Donation Amount
-                    <span id="req_0" class="req">*</span>
-                    </label>
-                    <span class="symbol">$</span>
-                    <span>
-                    <input id="Field0" name="Field0" type="text" class="field text currency nospin" value="" size="10" tabindex="0" required />
-                    <label for="Field0">Dollars</label>
-                    </span>
-                    <span class="cents">
-                    <input id="Field0-1" name="Field0-1" type="text" class="field text nospin" value="" size="2" maxlength="2" tabindex="0"       />
-                    <label for="Field0-1">Cents</label>
-                    </span>
-                    </li>
-                    <li id="foli112" class="notranslate      ">
-                    <label class="desc" id="title112" for="Field112">
+                    <div class="col">
+                      <input type="text" class="form-control" placeholder="Last name">
                     </div>
-              </div>
-                </div> 
-                    <div class="form-group">
-              <label for="inputMessage">Leave a message if you'd like!</label>
-              <textarea class="form-control" id="inputMessage" rows="5" required></textarea>
-          </div>
-            
-                <div>
-                <span class="subfield">
-                <input id="Field10" name="Field10" type="checkbox" class="field checkbox" value="I prefer to make my donation anonymously." tabindex="0"     />
-                <label class="choice" for="Field10">
-                <span class="choice__text notranslate" >I prefer to make my donation anonymously.</span>
-                <span class="choice__qty">
-                </span>
-                </label>
-                </span>
-                </div>
-                </fieldset>
-                </li>
-                <li id="foli109"
-                class="notranslate      "><label class="desc" id="title109" for="Field109">
-
-                  <button type="submit" class="btn btn-primary"><i class="fa fa-paper-plane"></i> Donate</button>
+                    
+                  </div>
+                  <div id="donation-margin" class="form-group">
+                    <label for="exampleFormControlSelect1">Donation Amount</label>
+                    <select>
+                      <option>$25</option>
+                      <option>$50</option>
+                      <option>$75</option>
+                      <option>$100</option>
+                    </select>
+                  </div>
                 </form>
             </div>
         </div>
     </div>
 </div>
+
+
+<div class="container-lg">
+  <div class="row">
+      <div class="col-md-10 mx-auto">
+          <div class="contact-form">
+              <h1>Post an anonymous message</h1>
+              <p class="hint-text">Say a few kind words to inspire hope!</p>       
+              <form>
+                <div class="form-group">
+                  
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Write a thoughtful message..."></textarea>
+                  <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
+                    <div>
+                        <a href="#" id="peerBtn"
+                            class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-yellow-500 hover:bg-yellow-400 md:py-4 md:text-lg md:px-10">
+                            Donate!
+                        </a>
+                    </div>
+                </div>
+                </div>
+              </form>
+          </div>
+      </div>
+  </div>
+</div>
+
+
 </body>
 </html>
 
