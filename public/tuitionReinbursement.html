@@ -15,51 +15,63 @@
 
   <style>
     body {
-        color: #333;
-        background: #fafafa;
-        font-family: "Patua One", sans-serif;
+      color: #333;
+      background: #fafafa;
+      font-family: "Patua One", sans-serif;
     }
+
     .contact-form {
-        padding: 50px;
-        margin: 30px 0;
+      padding: 50px;
+      margin: 30px 0;
     }
+
     .contact-form h1 {
-        color: #bc7519;
-        font-weight: bold;
-        margin: 0 0 15px;
+      color: #bc7519;
+      font-weight: bold;
+      margin: 0 0 15px;
     }
-    .contact-form .form-control, .contact-form .btn {
-        min-height: 38px;
-        border-radius: 2px;
+
+    .contact-form .form-control,
+    .contact-form .btn {
+      min-height: 38px;
+      border-radius: 2px;
     }
+
     .contact-form .form-control:focus {
-        border-color: #bc7519;
+      border-color: #bc7519;
     }
-    .contact-form .btn-primary, .contact-form .btn-primary:active {
-        color: #fff;
-        min-width: 150px;
-        font-size: 16px;
-        background: #bc7519 !important;
-        border: none;
+
+    .contact-form .btn-primary,
+    .contact-form .btn-primary:active {
+      color: #fff;
+      min-width: 150px;
+      font-size: 16px;
+      background: #bc7519 !important;
+      border: none;
     }
+
     .contact-form .btn-primary:hover {
-        background: #bc7519 !important; 
+      background: #bc7519 !important;
     }
+
     .contact-form .btn i {
-        margin-right: 5px;
+      margin-right: 5px;
     }
+
     .contact-form label {
-        opacity: 0.7;
+      opacity: 0.7;
     }
+
     .contact-form textarea {
-        resize: vertical;
+      resize: vertical;
     }
+
     .hint-text {
-        font-size: 15px;
-        padding-bottom: 20px;
-        opacity: 0.6;
+      font-size: 15px;
+      padding-bottom: 20px;
+      opacity: 0.6;
     }
-    </style>
+  </style>
 </head>
 
 <body>
@@ -81,13 +93,14 @@
           <!-- Dashboard/Charity/Scholarships/Peer Funding buttons -->
           <div class="hidden sm:block sm:ml-6">
             <div class="flex space-x-4">
-              <a href="/dashboard"
+              <a href="homePage.html"
                 class="px-3 py-2 rounded-md text-sm font-medium text-white hover:text-yellow-500 hover:bg-gray-900">Dashboard</a>
-              <a href="/charity"
+              <a href="charity.html"
                 class="px-3 py-2 rounded-md text-sm font-medium text-white hover:text-yellow-500 hover:bg-gray-900">Charity</a>
-              <a href="/scholarship"
-                class="px-3 py-2 rounded-md text-sm font-medium text-white hover:text-yellow-500 hover:bg-gray-900">Scholarships</a>
-              <a href="/pureFunding"
+              <a href="tuitionReinbursement.html"
+                class="px-3 py-2 rounded-md text-sm font-medium text-white hover:text-yellow-500 hover:bg-gray-900">Tuition
+                Reinbursement</a>
+              <a href="peerFunding.html"
                 class="px-3 py-2 rounded-md text-sm font-medium text-white hover:text-yellow-500 hover:bg-gray-900">Peer
                 Funding</a>
             </div>
@@ -113,13 +126,14 @@
       <!-- Mobile Dashboard/Charity/Scholarships/Peer funding buttons -->
       <div class=" sm:hidden">
         <div class="px-2 pt-2 pb-3 space-y-1">
-          <a href="#"
+          <a href="homePage.html"
             class="block px-3 py-2 rounded-md text-base font-medium text-white hover:text-yellow-500 hover:bg-gray-900">Dashboard</a>
-          <a href="#"
+          <a href="charity.html"
             class="block px-3 py-2 rounded-md text-base font-medium text-white hover:text-yellow-500 hover:bg-gray-900">Charity</a>
-          <a href="#"
-            class="block px-3 py-2 rounded-md text-base font-medium text-white hover:text-yellow-500 hover:bg-gray-900">Scholarships</a>
-          <a href="#"
+          <a href="tuitionReinbursement.html"
+            class="block px-3 py-2 rounded-md text-base font-medium text-white hover:text-yellow-500 hover:bg-gray-900">Tuition
+            Reinbursement</a>
+          <a href="peerFunding.html"
             class="block px-3 py-2 rounded-md text-base font-medium text-white hover:text-yellow-500 hover:bg-gray-900">Peer
             Funding</a>
         </div>
@@ -131,7 +145,7 @@
   <!-- HEADER -->
   <header class="bg-white shadow">
     <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
-      <h1 class="text-3xl font-bold leading-tight text-gray-900"> Scholarship </h1>
+      <h1 class="text-3xl font-bold leading-tight text-gray-900">Tuition Reinbursement</h1>
     </div>
   </header>
 
@@ -140,45 +154,52 @@
   <main>
 
     <div class="container-lg">
-        <div class="row">
-            <div class="col-md-10 mx-auto">
-                <div class="contact-form">
-                    <h1>IMPACT Scholarship!</h1>
-                    <p class="hint-text">We'd love to hear from you! Please fill out our Scholarship Application!</p>       
-                    <form action="/examples/actions/confirmation.php" method="post">
-                        <div class="row">
-                            <div class="col-sm-4">
-                                <div class="form-group">
-                                    <label for="inputName">Name</label>
-                                    <input type="text" class="form-control" id="inputName" required>
-                                </div>
-                            </div>                
-                            <div class="col-sm-4">
-                                <div class="form-group">
-                                    <label for="inputEmail">Email</label>
-                                    <input type="email" class="form-control" id="inputEmail" required>
-                                </div>
-                            </div>
-                            <div class="col-sm-4">
-                                <div class="form-group">
-                                    <label for="inputPhone">Phone Number</label>
-                                    <input type="text" class="form-control" id="inputPhone" required>
-                                </div>
-                            </div>
-                        </div>            
-                        <div class="form-group">
-                            <label for="inputSubject">School & GPA</label>
-                            <input type="text" class="form-control" id="inputSubject" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="inputMessage">Tell us about yourself & why you're applying for the IMAPACT Scholarship!</label>
-                            <textarea class="form-control" id="inputMessage" rows="5" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary"><i class="fa fa-paper-plane"></i> Apply</button>
-                    </form>
+      <div class="row">
+        <div class="col-md-10 mx-auto">
+          <div class="contact-form">
+            <h1>Tuition Reinbursement Request</h1>
+            <p class="hint-text">Upon completion of course, fill out the information below and tell us how
+              the course relates to your current career. We will then reach out and and inform you if you are qualified
+              for reinbursement! (additional information will be requested upon approval)
+            </p>
+            <form action="/examples/actions/confirmation.php" method="post">
+              
+
+              </div>
+              <div class="form-group">
+                <label for="inputSubject">School</label>
+                <input type="text" class="form-control" id="inputSubject" required>
+              </div>
+              <div class="form-group">
+                <label for="inputSubject">Course</label>
+                <input type="text" class="form-control" id="inputSubject" required>
+              </div>
+              <div class="form-group">
+                <label for="exampleFormControlSelect1">Grade</label>
+                <select class="donation-amount">
+                    <option>A</option>
+                    <option>A-</option>
+                    <option>B</option>
+                    <option>B-</option>
+                </select>
+            </div>
+              <div class="form-group">
+                <label for="inputMessage">Tell us about the course you are taking and how it applies to your future goals!</label>
+                <textarea class="form-control" id="inputMessage" rows="5" required></textarea>
+              </div>
+              
+              <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
+                <div>
+                    <a href="#" id="submitBtn"
+                        class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-yellow-500 hover:bg-yellow-400 md:py-4 md:text-lg md:px-10">
+                        Apply!
+                    </a>
                 </div>
             </div>
+            </form>
+          </div>
         </div>
+      </div>
     </div>
 
 

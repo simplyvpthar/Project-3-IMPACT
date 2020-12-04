@@ -9,7 +9,7 @@ $(document).ready(function () {
         for (let i = 0; i < response.length; i++) {
             charities.push(response[i].charityName);
             $('.box').append('<option value=' + charities[i].replace(' ', '_') + ' name=' + charities[i].replace(' ', '_') + '>' + charities[i] + '</option>');
-
+            
         }
         console.log(charities);
 
@@ -17,9 +17,10 @@ $(document).ready(function () {
 
         $("#submitBtn").click(function (event) {
             event.preventDefault();
-            console.log("button clicked")
+            console.log($('.box').find(":selected").text());
+            console.log($('.donation-amount').find(":selected").text());
+            
             // console.log(($('#box).find(select => select.selected)));
-            //     console.log($("#charityNames").filter(":selected"));
             //     var list = [];
             //     $("#charityOptions").filter(":selected").each(function(east){
             //         list.push($(this).val());

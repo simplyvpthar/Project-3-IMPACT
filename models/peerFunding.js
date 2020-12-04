@@ -1,10 +1,6 @@
 module.exports = function(sequelize, DataTypes) {
-  var Charity = sequelize.define("Charity", {
+  var peerFunding = sequelize.define("peerFunding", {
     user: {
-      type: DataTypes.STRING,
-      allowNull: false,
-    },
-    charityName: {
       type: DataTypes.STRING,
       allowNull: false,
     },
@@ -12,7 +8,12 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.INTEGER,
       allowNull: false,
     },
+    message: {
+      type: DataTypes.TEXT,
+      allowNull: true,
+    }
+    
     
   });
-  return Charity;
+  return peerFunding;
 };
