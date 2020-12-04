@@ -1,13 +1,9 @@
 module.exports = function(sequelize, DataTypes) {
   var peerFunding = sequelize.define("peerFunding", {
-    firstname: {
+    user: {
       type: DataTypes.STRING,
       allowNull: false,
     },
-    lastname: {
-      type: DataTypes.STRING,
-      allowNull: false,},
-    
     amount: {
       type: DataTypes.INTEGER,
       allowNull: false,

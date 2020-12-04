@@ -18,6 +18,7 @@ $(document).ready(function () {
         $("#submitBtn").click(function (event) {
             event.preventDefault();
             console.log($('.box').find(":selected").text());
+            console.log($('.donation-amount').find(":selected").text());
             
             // console.log(($('#box).find(select => select.selected)));
             //     var list = [];
