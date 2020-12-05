@@ -30,10 +30,14 @@ module.exports = function(app) {
   });
 
   app.get("/scholarship", function(req, res) {
-    res.sendFile(path.join(__dirname, "../public/scholarApp.html"));
+    res.sendFile(path.join(__dirname, "../public/scholarship.html"));
   });
 
-  app.get("/sign-up", function(req, res) {
-    res.sendFile(path.join(__dirname, "../public/signUp.html"));
+  app.get("/peer-funding", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/peerFunding.html"));
+  });
+
+  app.get("/create-account", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/createAccount.html"));
   });
 };
