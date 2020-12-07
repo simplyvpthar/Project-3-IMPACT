@@ -17,19 +17,16 @@ $(document).ready(function () {
 
         $("#submitBtn").click(function (event) {
             event.preventDefault();
-            console.log($('.box').find(":selected").text());
-            console.log($('.donation-amount').find(":selected").text());
-            
-            // console.log(($('#box).find(select => select.selected)));
-            //     var list = [];
-            //     $("#charityOptions").filter(":selected").each(function(east){
-            //         list.push($(this).val());
-            //     });
-            //     console.log(list);
-            //     $.post("/addeast", {'NameList': list})
-            //         .then(function(){
-            //             console.log("Added country");
-            //         });
+            // console.log($('.box').find(":selected").text());
+            // console.log($('.donation-amount').find(":selected").text());
+            var user = "user@example.com";
+            var charityName = $('.box').find(":selected").text()
+            var amount = $('.donation-amount').find(":selected").text()
+                $.post("/api/posts", {user, charityName, amount}
+                )
+                    .then(function(){
+                        console.log("Added Charity");
+                    });
 
         });
     });

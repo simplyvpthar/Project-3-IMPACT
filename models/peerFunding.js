@@ -1,5 +1,5 @@
 module.exports = function(sequelize, DataTypes) {
-  var peerFunding = sequelize.define("peerFunding", {
+  var PeerFunding = sequelize.define("PeerFunding", {
     user: {
       type: DataTypes.STRING,
       allowNull: false,
@@ -15,5 +15,5 @@ module.exports = function(sequelize, DataTypes) {
     
     
   });
-  return peerFunding;
+  return PeerFunding;
 };

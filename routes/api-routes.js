@@ -8,6 +8,7 @@
 // Requiring our Todo model
 var db = require("../models");
 
+
 // Routes
 // =============================================================
 module.exports = function(app) {
@@ -45,17 +46,36 @@ module.exports = function(app) {
   });
 
   // POST route for saving a new post
+  // routes are auto created?  I changed user, charityName, amount to just req.body
+  
   app.post("/api/posts", function(req, res) {
     console.log(req.body);
-    db.Charity.create({
-      title: req.body.title,
-      body: req.body.body,
-      category: req.body.category
-    })
+    db.Charity.create(req.body
+    )
       .then(function(dbPost) {
         res.json(dbPost);
       });
   });
+  
+  // app.post("/api/posts", function(req, res) {
+  //   console.log(req.body);
+  //   db.peerFunding.create(req.body
+  //   )
+  //     .then(function(dbPost) {
+  //       res.json(dbPost);
+  //     });
+  // });
+
+  // app.post("/api/posts", function(req, res) {
+  //   console.log(req.body);
+  //   db.reinbursement.create(req.body
+  //   )
+  //     .then(function(dbPost) {
+  //       res.json(dbPost);
+  //     });
+  // });
+
+
 
   // DELETE route for deleting posts
   app.delete("/api/posts/:id", function(req, res) {
