@@ -19,10 +19,11 @@ $(document).ready(function () {
             event.preventDefault();
             // console.log($('.box').find(":selected").text());
             // console.log($('.donation-amount').find(":selected").text());
-            var username = "Hard Coded User";
+            var user = "user@example.com";
             var charityName = $('.box').find(":selected").text()
             var amount = $('.donation-amount').find(":selected").text()
-                $.post("/posts", username, charityName, amount)
+                $.post("/api/posts", {user, charityName, amount}
+                )
                     .then(function(){
                         console.log("Added Charity");
                     });

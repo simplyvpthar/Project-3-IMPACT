@@ -1,5 +1,5 @@
 module.exports = function(sequelize, DataTypes) {
-    var reinbursement = sequelize.define("reinbursement", {
+    var Reinbursement = sequelize.define("Reinbursement", {
       user: {
         type: DataTypes.STRING,
         allowNull: false,
@@ -23,5 +23,5 @@ module.exports = function(sequelize, DataTypes) {
       
       
     });
-    return reinbursement;
+    return Reinbursement;
   };

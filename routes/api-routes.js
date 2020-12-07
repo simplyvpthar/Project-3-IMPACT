@@ -57,23 +57,23 @@ module.exports = function(app) {
       });
   });
   
-  app.post("/api/posts", function(req, res) {
-    console.log(req.body);
-    db.peerFunding.create(req.body
-    )
-      .then(function(dbPost) {
-        res.json(dbPost);
-      });
-  });
+  // app.post("/api/posts", function(req, res) {
+  //   console.log(req.body);
+  //   db.peerFunding.create(req.body
+  //   )
+  //     .then(function(dbPost) {
+  //       res.json(dbPost);
+  //     });
+  // });
 
-  app.post("/api/posts", function(req, res) {
-    console.log(req.body);
-    db.reinbursement.create(req.body
-    )
-      .then(function(dbPost) {
-        res.json(dbPost);
-      });
-  });
+  // app.post("/api/posts", function(req, res) {
+  //   console.log(req.body);
+  //   db.reinbursement.create(req.body
+  //   )
+  //     .then(function(dbPost) {
+  //       res.json(dbPost);
+  //     });
+  // });
 
 
 
