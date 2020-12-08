@@ -14,19 +14,15 @@ module.exports = function(app) {
 
   // index route loads view.html
   app.get("/", function(req, res) {
-    res.sendFile(path.join(__dirname, "../public/homePage.html"));
+    res.sendFile(path.join(__dirname, "../public/login.html"));
   });
 
-  app.get("/login", function(req, res) {
-    res.sendFile(path.join(__dirname, "../public/login.html"));
+  app.get("/homepage", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/homepage.html"));
   });
 
   app.get("/charity", function(req, res) {
     res.sendFile(path.join(__dirname, "../public/charity.html"));
-  });
-
-  app.get("/dashboard", function(req, res) {
-    res.sendFile(path.join(__dirname, "../public/dashboardTemplate.html"));
   });
 
   app.get("/scholarship", function(req, res) {
