@@ -12,6 +12,12 @@ var db = require("../models");
 // Routes
 // =============================================================
 module.exports = function(app) {
+  // TEST ROUTE
+  app.get("/api/testytesterson", (req, res) => {
+    res.json({
+      stuff: "This is stuff from the server!"
+    });
+  });
 
   // GET route for getting all of the posts
   app.get("/api/posts/", function(req, res) {
