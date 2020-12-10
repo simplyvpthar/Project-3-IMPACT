@@ -12,6 +12,12 @@ var db = require("../models");
 // Routes
 // =============================================================
 module.exports = function(app) {
+  // TEST ROUTE
+  app.get("/api/testytesterson", (req, res) => {
+    res.json({
+      stuff: "This is stuff from the server!"
+    });
+  });
 
   // GET route for getting all of the posts
   app.get("/api/posts/", function(req, res) {
@@ -57,14 +63,15 @@ module.exports = function(app) {
       });
   });
   
-  // app.post("/api/posts", function(req, res) {
-  //   console.log(req.body);
-  //   db.peerFunding.create(req.body
-  //   )
-  //     .then(function(dbPost) {
-  //       res.json(dbPost);
-  //     });
-  // });
+  app.post("/api/posts/peer", function(req, res) {
+    console.log(req.body);
+    db.PeerFunding.create(req.body
+    )
+      .then(function(dbPost) {
+        res.json(dbPost);
+      });
+  });
+
 
   app.post("/api/posts/reinburse", function(req, res) {
     console.log(req.body);

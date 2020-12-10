@@ -157,13 +157,13 @@
 
   <img src="images/header.jpeg">
 
-
   <!-- MAIN -->
   <main>
 
     <div class="container-lg">
       <div class="row">
         <div class="col-md-10 mx-auto">
+
           <div class="contact-form">
             <h1>Largesse Peer-to-Peer Donations</h1>
             <p class="hint-text">Donate here to help co-workers in need!</p>
@@ -190,6 +190,24 @@
                 <option>$75</option>
                 <option>$100</option>
               </select>
+
+          <div class="contact-form">
+            
+            <h1>Donate here to help co-workers in need!</h1>
+            <p class="hint-text">Donate and leave an anonymous message</p>
+            <label for="exampleFormControlSelect1">Donation Amount</label>
+            <select class="peerAmount">
+              <option>25</option>
+              <option>50</option>
+              <option>75</option>
+              <option>100</option>
+            </select>
+            <form>
+              <div class="form-group">
+
+                <textarea class="peerMessage form-control" id="exampleFormControlTextarea1" rows="3"
+                  placeholder="Write a thoughtful message..."></textarea>
+
                 <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                   <div>
                     <a href="#" id="peerBtn"
@@ -207,6 +225,7 @@
 
   </main>
 
+  <script src="js/peer.js"></script>
 </body>
 
 </html>
