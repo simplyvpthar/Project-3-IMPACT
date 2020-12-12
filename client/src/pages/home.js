@@ -13,7 +13,7 @@ const Home = () => {
             </h2>
             
             <p className="mt-2 text-center text-sm text-gray-600">
-              <a href="createAccount.html" className="font-medium text-yellow-500 hover:text-yellow-400"> Create account with company ID </a>
+              <a href="/register" className="font-medium text-yellow-500 hover:text-yellow-400"> Create account with company ID </a>
             </p>
           </div>
     
