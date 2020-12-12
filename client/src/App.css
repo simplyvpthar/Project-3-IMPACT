@@ -183912,3 +183912,137 @@ video {
   }
 }
 
+
+
+body {
+      color: #333;
+      background: #fafafa;
+      font-family: "Patua One", sans-serif;
+    }
+
+    #donation-margin {
+      padding: 1.5rem;
+    }
+
+    .contact-form {
+      margin: 30px 0;
+    }
+
+    .contact-form h1 {
+      color: #bc7519;
+      font-weight: bold;
+      margin: 0 0 15px;
+    }
+
+    .contact-form .form-control,
+    .contact-form .btn {
+      min-height: 38px;
+      border-radius: 2px;
+    }
+
+    .contact-form .form-control:focus {
+      border-color: #bc7519;
+    }
+
+    .contact-form .btn-primary,
+    .contact-form .btn-primary:active {
+      color: #fff;
+      min-width: 150px;
+      font-size: 16px;
+      background: #bc7519 !important;
+      border: none;
+    }
+
+    .contact-form .btn-primary:hover {
+      background: #bc7519 !important;
+    }
+
+    .contact-form .btn i {
+      margin-right: 5px;
+    }
+
+    .contact-form label {
+      opacity: 0.7;
+    }
+
+    .contact-form textarea {
+      resize: vertical;
+    }
+
+    h1 {
+      font-size: 4.5rem;
+    }
+
+    .hint-text {
+      font-size: 2.0rem;
+      padding-bottom: 20px;
+      opacity: 0.6;
+    }
+
+
+
+    body {
+      color: #333;
+      background: #fafafa;
+      font-family: "Patua One", sans-serif;
+    }
+
+    #donation-margin {
+      padding: 1.5rem;
+    }
+
+    .contact-form {
+      margin: 30px 0;
+    }
+
+    .contact-form h1 {
+      color: #bc7519;
+      font-weight: bold;
+      margin: 0 0 15px;
+    }
+
+    .contact-form .form-control,
+    .contact-form .btn {
+      min-height: 38px;
+      border-radius: 2px;
+    }
+
+    .contact-form .form-control:focus {
+      border-color: #bc7519;
+    }
+
+    .contact-form .btn-primary,
+    .contact-form .btn-primary:active {
+      color: #fff;
+      min-width: 150px;
+      font-size: 16px;
+      background: #bc7519 !important;
+      border: none;
+    }
+
+    .contact-form .btn-primary:hover {
+      background: #bc7519 !important;
+    }
+
+    .contact-form .btn i {
+      margin-right: 5px;
+    }
+
+    .contact-form label {
+      opacity: 0.7;
+    }
+
+    .contact-form textarea {
+      resize: vertical;
+    }
+
+    h1 {
+      font-size: 4.5rem;
+    }
+
+    .hint-text {
+      font-size: 2.0rem;
+      padding-bottom: 20px;
+      opacity: 0.6;
+    }
+

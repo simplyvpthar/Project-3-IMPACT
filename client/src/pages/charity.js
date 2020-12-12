@@ -19,14 +19,14 @@ const Charity = () => {
                         
                         <div className="hidden sm:block sm:ml-6">
                             <div className="flex space-x-4">
-                                <a href="homePage.html"
-                                    className="px-3 py-2 rounded-md text-sm font-medium text-white hover:text-yellow-500 hover:bg-gray-900">Dashboard</a>
-                                <a href="charity.html"
+                                <a href="/home"
+                                    className="px-3 py-2 rounded-md text-sm font-medium text-white hover:text-yellow-500 hover:bg-gray-900">Home</a>
+                                <a href="/charity"
                                     className="px-3 py-2 rounded-md text-sm font-medium text-white hover:text-yellow-500 hover:bg-gray-900">Charity</a>
-                                <a href="tuitionReinbursement.html"
+                                <a href="/tuitionreinbursement"
                                     className="px-3 py-2 rounded-md text-sm font-medium text-white hover:text-yellow-500 hover:bg-gray-900">Tuition
                                     Reinbursement</a>
-                                <a href="peerFunding.html"
+                                <a href="/peerfunding"
                                     className="px-3 py-2 rounded-md text-sm font-medium text-white hover:text-yellow-500 hover:bg-gray-900">Peer
                                     Funding</a>
                             </div>

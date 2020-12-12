@@ -23,25 +23,25 @@ const Peerfunding = () => {
               <div className="hidden sm:block sm:ml-6">
                 <div className="flex space-x-4">
                   <a
-                    href="homePage.html"
+                    href="/home"
                     className="px-3 py-2 rounded-md text-sm font-medium text-white hover:text-yellow-500 hover:bg-gray-900"
                   >
-                    Dashboard
+                    Home
                   </a>
                   <a
-                    href="charity.html"
+                    href="/charity"
                     className="px-3 py-2 rounded-md text-sm font-medium text-white hover:text-yellow-500 hover:bg-gray-900"
                   >
                     Charity
                   </a>
                   <a
-                    href="tuitionReinbursement.html"
+                    href="/tuitionReinbursement"
                     className="px-3 py-2 rounded-md text-sm font-medium text-white hover:text-yellow-500 hover:bg-gray-900"
                   >
                     Tuition Reinbursement
                   </a>
                   <a
-                    href="peerFunding.html"
+                    href="/peerFunding"
                     className="px-3 py-2 rounded-md text-sm font-medium text-white hover:text-yellow-500 hover:bg-gray-900"
                   >
                     Peer Funding
