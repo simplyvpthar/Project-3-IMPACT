@@ -1,8 +1,10 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import axios from 'axios';
-import Charity from './pages/charity';
 import Home from './pages/home';
+import Charity from './pages/charity';
+import Dashboard from './pages/dashboard';
+import Peerfunding from './pages/peerfunding';
 import "./App.css";
 
 class App extends Component {
@@ -21,11 +23,15 @@ class App extends Component {
     return (
       <Router>
         <Switch>
-          <Route exact path="/home-react" component={Home} />
-          <Route exact path="/charity-react" component={Charity} />
+          <Route exact path="/" component={Home} />
+          <Route exact path="/charity" component={Charity} />
+          <Route exact path="/dashboard" component={Dashboard} />
+          <Route exact path="/peerfunding" component={Peerfunding} />
+          
+          
         </Switch>
         {/* example from server */}
-        <h2>This is from the server: {this.state.serverResponse}</h2>
+       
       </Router>
     );
   }
