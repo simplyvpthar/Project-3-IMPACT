@@ -23,10 +23,10 @@ const Dashboard = () => {
               <div className="hidden sm:block sm:ml-6">
                 <div className="flex space-x-4">
                   <a
-                    href="/dashboard"
+                    href="/home"
                     className="px-3 py-2 rounded-md text-sm font-medium text-white hover:text-yellow-500 hover:bg-gray-900"
                   >
-                    Dashboard
+                    Home
                   </a>
                   <a
                     href="/charity"
@@ -35,13 +35,13 @@ const Dashboard = () => {
                     Charity
                   </a>
                   <a
-                    href="/scholarship"
+                    href="/tuitionreinbursement"
                     className="px-3 py-2 rounded-md text-sm font-medium text-white hover:text-yellow-500 hover:bg-gray-900"
                   >
-                    Scholarships
+                    Tuition Reinbursement
                   </a>
                   <a
-                    href="/pureFunding"
+                    href="/purefunding"
                     className="px-3 py-2 rounded-md text-sm font-medium text-white hover:text-yellow-500 hover:bg-gray-900"
                   >
                     Peer Funding
